@@ -100,6 +100,10 @@ export const resolvers = {
 
             const urlPhone = `https://api.api-ninjas.com/v1/validatephone?number=${phone}`;
 
+            
+            console.log("Url: ", urlPhone);
+            console.log("API_KEY: ", API_KEY)
+
             const dataPhone = await fetch(urlPhone,
                 {
                     headers: {
